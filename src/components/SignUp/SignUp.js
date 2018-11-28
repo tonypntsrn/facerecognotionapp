@@ -22,7 +22,7 @@ class SignUp extends Component {
     };
 
     onSubmitSignIn = () => {
-        fetch('http://localhost:4000/signup', {
+        fetch('https://arcane-brook-87615.herokuapp.com/signup', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -91,6 +91,6 @@ class SignUp extends Component {
             </article>
         );
     }
-};
+}
 
 export default SignUp;
